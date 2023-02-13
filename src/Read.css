@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@font-face {
+    font-family: 'Material Symbols Rounded';
+    font-style: normal;
+    font-weight: 100 700;
+    src: url(https://fonts.gstatic.com/s/materialsymbolsrounded/v83/sykg-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190Fjzag.woff2) format('woff2');
+  }
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body{
+    display: flex;
+    /* align-items: center; */
+    padding: 0 10px;
+    /* justify-content: center; */
+    min-height: 100vh;
+    background: #3d3d3d;
+}
+
+#Read{
+    width: 60vw;
+    height: 85vh;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.182);
+}
+
+.title{
+    align-items: center;
+    padding: 20px 20px 15px;
+    font-weight: 700;
+    font-size: calc(60vw / 25);
+    text-align: center;
+}
+.content{
+    padding: 0 20px 20px;
+    font-size: calc(60vw / 55);
+    text-align: center;
+}

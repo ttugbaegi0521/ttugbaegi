@@ -20,6 +20,7 @@ body{
     justify-content: center;
     min-height: 100vh;
     background: #3d3d3d;
+    clip-path:polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
   
 .material-symbols-rounded { 

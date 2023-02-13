@@ -79,6 +79,11 @@ function App() {
     renderCalendar();
   }
 
+  function dateClick(data){
+    let a = currentYear + months[currentMonth] + data.target.innerText;
+    window.location.href = "/read/"+a;
+    //window.open("/write/" + currentYear + months[currentMonth] + e.target.innerText, "_blank")
+  }
 
   return (
     <div className="App">
@@ -101,7 +106,7 @@ function App() {
             <li id="weekend">Sat</li>
           </ul>
           {/* <ul id="days"> <p dangerouslySetInnerHTML={ {__html: dateNow} }></p> </ul> */}
-          <div id="days" dangerouslySetInnerHTML={ {__html: dateNow} }></div>
+          <div id="days" dangerouslySetInnerHTML={ {__html: dateNow} } onClick={dateClick}></div>
         </div>
       </div>
     </div>
